@@ -10,17 +10,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/joinclass.css">
         <link rel="stylesheet" href="css/previousclass.css">
     </head>
-    <body>
+    <body style="background-color: cadetblue;">
         <section class="container-fluid p-0">
             
         </section>
 
         <section class="container-fluid p-0">
-            
+            <div class="container-fluid my-2">
+                <div class="container">
+                    <div class="rounded bg-gradient-2 text-white shadow p-5 text-center mb-5">
+                        <p class="mb-4 font-weight-bold text-uppercase">Next Class Begins In</p>
+                        <div id="time2" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <button id="join-btn" class="mx-auto shadow"><span>JOIN CLASS</span></button>
+                </div>
+            </div>
+            <script src="js/timer.js"></script>
         </section>
 
         <section class="container-fluid p-0">
