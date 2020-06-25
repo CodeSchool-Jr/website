@@ -1,0 +1,41 @@
+.for_slick_slider{
+    display:flex;
+    
+}
+.for_slick_slider .items{
+    width:19rem;
+    height:18rem;
+margin: 2rem .01rem 4rem .01rem;
+
+padding: 0%;
+
+ 
+}
+.for_slick_slider .items  .tempo{
+    width:19rem;
+    height:18rem;
+    transition: all linear .4s;
+}
+
+.for_slick_slider .slick-center .tempo{
+transform: scale(1.25);
+}
+.thumnail{
+    width:19rem;
+    height:17rem;
+    
+    }
+    
+    .thumnail img{
+        width:18.9rem;
+        height:10rem;
+    }
+  .title {
+        line-height: .9rem;font-weight:400;letter-spacing: .02rem;font-family: Solway; color:grey
+    }
+    .xyz {
+        font-size: .8rem; font-family: Solway; font-weight: 400; color: grey;
+    }
+    .container h1{
+        font-family: Acme;font-weight:400;
+    }
