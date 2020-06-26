@@ -15,7 +15,57 @@
         <link rel="stylesheet" href="css/previousclass.css">
     </head>
     <body>
-        <section class="container-fluid p-0">
+        <header>
+            <div class="container align-items-center py-3" id="navbarContainer">
+                <nav class="navbar navbar-dark navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#"><h3>CodeSchool Jr</h3></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavbar"
+                        aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mobileNavbar">
+                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Schedule </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="home-section container-fluid">
+            <div class="row no-gutters py-5">
+                    <div class="col-md-4 order-2 order-sm-2 order-md-0 order-lg-0 order-xl-0">
+                        <div class="know-your-schedule-banner bg-warning py-5 d-inline-block text-center">
+                            <h3>Know the<br>Schedule</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6 text-white">
+                        <div class="welcome-title-container">
+                            <h1>
+                                Welcome to<br>
+                                Coding Classes<br>
+                                By IITians
+                            </h1>
+                        </div>
+                    </div>
+            </div>
+            <img src="images/hex1.png" class="hex1" />
+        </section>
+
+        <section class="container-fluid p-0" style="height: 1000px;">
             
         </section>
 
@@ -23,8 +73,21 @@
             
         </section>
 
-        <section class="container-fluid p-0">
-            
-        </section>
+        <script>
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                var window_width = window.innerWidth;
+                $(document).scroll(function() { 
+                    if (window_width > 768){
+                        scroll_pos = $(this).scrollTop();
+                        if(scroll_pos > 100) {
+                            $("header").css('background-color', '#6051a0');
+                        } else {
+                            $("header").css('background-color', 'transparent');
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

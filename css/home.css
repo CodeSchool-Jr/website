@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+html, body{
+    height: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1;
+}
+.hex1 {
+    animation: rotation 30s infinite linear;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+}
+#navbarContainer .navbar {
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.home-section {
+    position: relative;
+    background-image: url('../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 140px 0px 175px 0px;
+}
+.know-your-schedule-banner {
+    width: 90%;
+    transition: 0.3s cubic-bezier(0.07, 0.99, 0.43, 1.36);
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.know-your-schedule-banner:hover {
+    width: 98%;
+}
+@media(max-width: 768px){
+    header {
+        background: #554697;
+        
+    }
+    .home-section {
+        background: linear-gradient(0deg, #78719c,#554697);
+        padding: 90px 0px 85px 0px;
+    }
+    .know-your-schedule-banner {
+        order: 2;
+    }
+    .welcome-title-container{
+        margin: 30px 0px 90px 0px;
+        text-align: center;
+    }
+}
