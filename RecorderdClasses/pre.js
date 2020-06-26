@@ -14,3 +14,5 @@ $(function(){
         centerMode: true,
         centerPadding: '40px',
       });});
+      
+     
