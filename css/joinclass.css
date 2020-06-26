@@ -22,6 +22,10 @@
     background: #ff416c;
     background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
     background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43a2ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .rounded {
@@ -30,11 +34,13 @@
 
 #join-btn{
     display: block;
-    color: #fff;
+    color: rgb(234, 235, 236);
     font-size: 18px;
     text-transform: uppercase;
     background-size: 200% auto;
     background-image: linear-gradient(to right, #8943e6 0%, #ff4b2b 50%, #8943e6 100%);
+    background-image: linear-gradient(to right, #abbaab 0%, #ffffff 50%, #abbaab 100%);
+    background-image: linear-gradient(to right, #244568 0%, #2f6097 50%, #263f5a 100%);
     border-radius: 10px;
     padding: 10px 50px;
     transition: 0.5s;
