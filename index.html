@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/joinclass.css">
         <link rel="stylesheet" href="css/previousclass.css">
@@ -63,13 +64,22 @@
                     </div>
             </div>
             <img src="images/hex1.png" class="hex1" />
+            <img src="images/hex2.png" class="hex2" />
         </section>
-
-        <section class="container-fluid p-0" style="height: 1000px;">
             
+        <section class="container-fluid timer-section p-0 mt-5">
+            <div class="rounded bg-gradient-2 shadow px-5 pt-5 pb-4 text-center mb-5">
+                <div class="py-5">
+                    <p class="mb-4 font-weight-bold text-uppercase">Next Class Begins In</p>
+                    <div id="time2" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+                    <div class="row my-3">
+                        <a class="mx-auto shadow btn btn-join text-white">Join Class</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="container-fluid p-0">
+        <section class="container-fluid p-0" style="height: 1000px">
             
         </section>
 
@@ -77,10 +87,10 @@
             $(document).ready(function(){       
                 var scroll_pos = 0;
                 var window_width = window.innerWidth;
-                $(document).scroll(function() { 
+                $('body').scroll(function() { 
                     if (window_width > 768){
                         scroll_pos = $(this).scrollTop();
-                        if(scroll_pos > 100) {
+                        if(scroll_pos > 50) {
                             $("header").css('background-color', '#6051a0');
                         } else {
                             $("header").css('background-color', 'transparent');
@@ -89,5 +99,6 @@
                 });
             });
         </script>
+        <script src="js/timer.js"></script>
     </body>
 </html>

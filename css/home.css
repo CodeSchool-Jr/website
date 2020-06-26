@@ -7,9 +7,12 @@
 
 html, body{
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: initial;
 }
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     transition: 0.3s;
     z-index: 1;
@@ -19,6 +22,15 @@ header {
     position: absolute;
     bottom: 0;
     right: -100px;
+    pointer-events: none;
+    touch-action:none;
+}
+.hex2 {
+    position: absolute;
+    bottom: -400px;
+    left: -100px;
+    pointer-events: none;
+    touch-action:none;
 }
 #navbarContainer .navbar {
     background-color: transparent;
@@ -40,14 +52,19 @@ header {
     cursor: pointer;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    pointer-events: all;
 }
 .know-your-schedule-banner:hover {
     width: 98%;
 }
+@media(max-width: 1200px){
+    .hex2 {
+        left: -300px;
+    }
+}
 @media(max-width: 768px){
     header {
         background: #554697;
-        
     }
     .home-section {
         background: linear-gradient(0deg, #78719c,#554697);
@@ -59,5 +76,8 @@ header {
     .welcome-title-container{
         margin: 30px 0px 90px 0px;
         text-align: center;
+    }
+    .hex2 {
+        left: -400px;
     }
 }
