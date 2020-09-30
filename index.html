@@ -10,21 +10,211 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+        <script src="https://kit.fontawesome.com/5a891aa92f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/slick.css">
+	    <link rel="stylesheet" href="css/Slice.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/joinclass.css">
-        <link rel="stylesheet" href="css/previousclass.css">
     </head>
     <body>
-        <section class="container-fluid p-0">
+        <header>
+            <div class="container align-items-center py-3" id="navbarContainer">
+                <nav class="navbar navbar-dark navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#"><h3>CodeSchool Jr</h3></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileNavbar"
+                        aria-controls="mobileNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mobileNavbar">
+                        <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Schedule </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="home-section container-fluid">
+            <div class="row no-gutters py-5">
+                    <div class="col-md-4 order-2 order-sm-2 order-md-0 order-lg-0 order-xl-0">
+                        <div class="know-your-schedule-banner bg-warning py-5 d-inline-block text-center">
+                            <h3>Know the<br>Schedule</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6 text-white">
+                        <div class="welcome-title-container">
+                            <h1>
+                                Welcome to<br>
+                                Coding Classes<br>
+                                By IITians
+                            </h1>
+                        </div>
+                    </div>
+            </div>
+            <img src="images/hex1.png" class="hex1" />
+            <img src="images/hex2.png" class="hex2" />
+        </section>
             
+        <section class="container-fluid timer-section p-0 mt-5">
+            <div class="rounded bg-gradient-2 shadow px-5 pt-5 pb-4 text-center mb-5">
+                <div class="py-5">
+                    <p class="mb-4 font-weight-bold text-uppercase">Next Class Begins In</p>
+                    <div id="time2" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+                    <div class="row my-3">
+                        <a class="mx-auto shadow btn btn-join text-white">Join Class</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="container-fluid p-0">
-            
+        <section class="container-fluid p-0 py-5" id="section-classes">
+            <div class="page-wrapper pb-5">
+                <div class="post-slider position-relative">
+                    <div class="slider-title text-center mb-2">Pervious Classes</div>
+                    <div class="previewx  ">
+                        <i class="fas fa-chevron-left" style="font-size:35px; color:rgba(26, 161, 163,.9);"></i>
+                    </div>
+                    <div class=" forwardx">
+                        <i class="fas fa-chevron-right" style=" color:rgba(26, 161, 163,.9);"></i>
+                    </div>
+                    <div class="post-wrapper m-auto">
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post d-inline-block mx-3">
+                            <img class="slider-image"
+                                src="https://images.unsplash.com/photo-1593145134471-e91fe115022e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <div class="post-info ">
+                                <div class="px-3 py-2 title">Lorem Ipsum is simply dummy text of the latin </div>
+                                <div class="px-3 py-2 text-muted">
+                                    <i class="far fa-user"></i> AVINASH
+                                    &nbsp;
+                                    <i class="far fa-calendar-alt"></i> 30 jan 2019
+                                    <div class="text-center mt-2">
+                                        <a class="btn btn-custom"
+                                            href="http://www.google.com">click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="container-fluid p-0">
-            
-        </section>
+        <!-- <section class="container" style="height: 400px;">
+
+        </section> -->
+
+        <script>
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                var window_width = window.innerWidth;
+                $('body').scroll(function() { 
+                    if (window_width > 768){
+                        scroll_pos = $(this).scrollTop();
+                        if(scroll_pos > 50) {
+                            $("header").css('background-color', '#6051a0');
+                        } else {
+                            $("header").css('background-color', 'transparent');
+                        }
+                    }
+                });
+            });
+        </script>
+        <script src="js/timer.js"></script>
+        <script type="text/javascript" src="js/slice.js"></script>
+        <script type="text/javascript" src="js/bundle/slick.min.js"></script>
     </body>
 </html>
